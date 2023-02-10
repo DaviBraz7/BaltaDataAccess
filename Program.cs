@@ -10,7 +10,7 @@ namespace BaltaDataAccess
     {
         static void Main(string[] args)
         {
-            const string connectionString = "Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True";
+            const string connectionString = "Server=localhost,1433;Database=balta;Integrated Security=true ;TrustServerCertificate=True";
 
             using (var connection = new SqlConnection(connectionString))
             {
