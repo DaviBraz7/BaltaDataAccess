@@ -300,6 +300,6 @@ namespace BaltaDataAccess
                 }
             }
         }
-        }
+    }
 }
 
