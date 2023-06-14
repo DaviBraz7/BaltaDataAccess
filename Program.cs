@@ -25,7 +25,9 @@ namespace BaltaDataAccess
                 //OneToOne(connection);
                 //OneToMany(connection);
                 //QueryMutiple(connection);
-                SelectIn(connection);
+                //SelectIn(connection);
+                //Like(connection, "api");
+                Transaction(connection);
 
             }
         }
@@ -314,6 +316,55 @@ namespace BaltaDataAccess
                 {
                     Console.WriteLine(item.Title);
                 }
+        }
+    
+        static void Like(SqlConnection connection, string term){
+            
+            var query = @"SELECT * FROM [Course] WHERE [Title] LIKE @exp";
+
+            var items = connection.Query<Course>(query, new
+            {
+                exp = $"%{term}%"
+            });
+            foreach (var item in items)
+            {
+                Console.WriteLine(item.Title);
+            }
+        }
+    
+        static void Transaction(SqlConnection connection)
+        {
+                var category = new Category();
+                category.Id = Guid.NewGuid();
+                category.Title = "Minha categoria que não quero";
+                category.Url = "amazon";
+                category.Description = "Categoria destinada a serviços do AWS";
+                category.Order = 8;
+                category.Summary = "AWS Cloud";
+                category.Featured = false;
+
+                var insertSql = @"INSERT INTO [Category] VALUES (@Id,@Title,@Url,@Summary,@Order,@Description,@Featured)";
+                connection.Open();
+                using(var transaction = connection.BeginTransaction())
+                {
+                    var rows = connection.Execute(insertSql, new
+                {
+
+                    category.Id,
+                    category.Title,
+                    category.Url,
+                    category.Summary,
+                    category.Order,
+                    category.Description,
+                    category.Featured
+                },transaction);
+                    transaction.Commit();
+                    //transaction.Rollback();
+                
+                    Console.WriteLine($"{rows} linhas inseridas");
+                }
+
+
         }
     }
 }
