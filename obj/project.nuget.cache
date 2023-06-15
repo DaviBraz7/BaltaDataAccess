@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OJF3SCUqmYzS15vGCEFDnY3zv9UlFXdBoSQh/0nSOUUxV0TDyq8p5Pw6f3gLxneCQbJfiLtNmXxNm1zXX+3I0g==",
+  "dgSpecHash": "RUu+wTLQK0FLD3fStuXcFskEat0JrZ+IzC6anLX+dHoVxYyXVVv0Yl4QfzZf17oIzoOgG24eQu80KIrowMqaFA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
+  "projectFilePath": "c:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Davi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Davi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

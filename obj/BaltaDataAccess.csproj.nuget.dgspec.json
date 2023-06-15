@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj": {}
+    "c:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj": {}
   },
   "projects": {
-    "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj": {
+    "c:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
+        "projectUniqueName": "c:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
         "projectName": "BaltaDataAccess",
-        "projectPath": "C:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
+        "projectPath": "c:\\dev\\BaltaDataAccess\\BaltaDataAccess.csproj",
         "packagesPath": "C:\\Users\\Davi\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\BaltaDataAccess\\obj\\",
+        "outputPath": "c:\\dev\\BaltaDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
